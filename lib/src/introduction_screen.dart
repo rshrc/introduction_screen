@@ -318,47 +318,7 @@ class IntroductionScreen extends StatefulWidget {
     this.rtl = false,
     this.allowImplicitScrolling = false,
     this.canProgress = defaultCanProgressFunction,
-  })  : assert(
-          pages != null || rawPages != null,
-          "You must set either 'pages' or 'rawPages' parameter",
-        ),
-        assert(
-          (pages?.length ?? rawPages?.length ?? 0) > 0,
-          "You must provide at least one page using 'pages' or 'rawPages' parameter !",
-        ),
-        assert(
-          !showDoneButton || done != null || overrideDone != null,
-          "You must set 'done' or 'overrideDone' parameter, or set 'showDoneButton' to false",
-        ),
-        assert(
-          done == null || onDone != null,
-          "If you set 'done' parameter, you must also set 'onDone' parameter",
-        ),
-        assert(
-          !showSkipButton || skip != null || overrideSkip != null,
-          "You must set 'skip' or 'overrideSkip' parameter, or set 'showSkipButton' to false",
-        ),
-        assert(
-          !showNextButton || next != null || overrideNext != null,
-          "You must set 'next' or 'overrideNext' parameter, or set 'showNextButton' to false",
-        ),
-        assert(
-          !showBackButton || back != null || overrideBack != null,
-          "You must set 'back' or 'overrideBack' parameter, or set 'showBackButton' to false",
-        ),
-        assert(
-          !(showBackButton && showSkipButton),
-          "You cannot set 'showBackButton' and 'showSkipButton' to true. Only one, or both false.",
-        ),
-        assert(
-          skipOrBackFlex >= 0 && dotsFlex >= 0 && nextFlex >= 0,
-          'Flex parameters must be >= 0',
-        ),
-        assert(
-          initialPage >= 0,
-          'Initial page parameter must by a positive number, >= 0.',
-        ),
-        super(key: key);
+  });
 
   @override
   IntroductionScreenState createState() => IntroductionScreenState();

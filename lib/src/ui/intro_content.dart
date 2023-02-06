@@ -25,22 +25,22 @@ class IntroContent extends StatelessWidget {
           : null,
       child: Column(
         children: [
-          Padding(
-            padding: page.decoration.titlePadding,
-            child: _buildWidget(
-              page.titleWidget,
-              page.title,
-              page.decoration.titleTextStyle,
-            ),
-          ),
-          Container(
-            padding: page.decoration.bodyPadding,
-            child: _buildWidget(
-              page.bodyWidget,
-              page.body,
-              page.decoration.bodyTextStyle,
-            ),
-          ),
+          // Padding(
+          //   padding: page.decoration.titlePadding,
+          //   child: _buildWidget(
+          //     page.titleWidget,
+          //     page.title,
+          //     page.decoration.titleTextStyle,
+          //   ),
+          // ),
+          // Container(
+          //   padding: page.decoration.bodyPadding,
+          //   child: _buildWidget(
+          //     page.bodyWidget,
+          //     page.body,
+          //     page.decoration.bodyTextStyle,
+          //   ),
+          // ),
         ],
       ),
     );
